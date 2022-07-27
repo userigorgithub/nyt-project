@@ -15,7 +15,6 @@ const App = () => {
   useEffect(() => {
     getData()
     .then(data => {
-      // console.log(data.results)
       setArticles(data.results)
     })
     .catch(error => {
