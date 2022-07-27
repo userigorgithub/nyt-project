@@ -11,7 +11,7 @@ import ArticleDetails from '../ArticleDetails/ArticleDetails';
 
 const App = () => {
   const [articles, setArticles] = useState([])
-  const [articleDetails, setArticleDetails] = useState({})
+  const [articleDetails, setArticleDetails] = useState(null)
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -37,10 +37,11 @@ const App = () => {
       <Routes>
         <Route path='/'
           element={<Articles
-          articles={articles}/>}
+          articles={articles} setArticleDetails={setArticleDetails}/>}
         />
-        <Route path='/:id'
+        <Route path='/article/:id'
           element={<ArticleDetails
+          articles={articles}
           articleDetails={articleDetails}/>}
         />
       </Routes>
