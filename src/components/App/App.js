@@ -5,11 +5,13 @@ import { getData } from '../../apiCalls';
 import Header from '../Header/Header';
 import Articles from '../Articles/Articles';
 import Footer from '../Footer/Footer';
+import ArticleDetails from '../ArticleDetails/ArticleDetails';
 
 
 
 const App = () => {
   const [articles, setArticles] = useState([])
+  const [articleDetails, setArticleDetails] = useState({})
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -22,14 +24,25 @@ const App = () => {
     })
   }, [])
 
+
+  // const showArticleDetails = (id) => {
+  //   const article = articles.find(article.title === id)
+  //   setArticleDetails(article)
+  //   navigate(`/article/${id}`)
+  // }
+
   return (
     <main className="App">
       <Header/>
       <Routes>
         <Route path='/'
-          element={<Articles articles={articles}/>}
+          element={<Articles
+          articles={articles}/>}
         />
-
+        <Route path='/:id'
+          element={<ArticleDetails
+          articleDetails={articleDetails}/>}
+        />
       </Routes>
       <Footer/>
     </main>

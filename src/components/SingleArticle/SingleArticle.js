@@ -10,7 +10,7 @@ const SingleArticle = ({ id, title, image, byline, abstract }) => {
       <img src={image} alt={title} />
       <h3>{byline}</h3>
       <p>{abstract}</p>
-      <Link to={`/${title}`}><button>Read More</button></Link>
+      <Link to={`/${id}`}><button>Read More</button></Link>
     </div>
   )
 }
