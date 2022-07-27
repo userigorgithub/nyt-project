@@ -1,12 +1,14 @@
 import './SingleArticle.css';
 import React from 'react';
 
-const SingleArticle = () => {
+const SingleArticle = ({ id, title, image, byline, abstract }) => {
 
   return (
     <div className='SingleArticle'>
-      <p>Just a single article1</p>
-      <p>Just a single article2</p>
+      <h2>{title}</h2>
+      <img src={image} alt='image' />
+      <h3>{byline}</h3>
+      <p>{abstract}</p>
     </div>
   )
 }
