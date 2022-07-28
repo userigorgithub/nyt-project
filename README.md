@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# nyt-project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Contributors](#contributors)
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Learning Goals](#learning-goals)
+- [Features](#features)
+- [Project Demo](#project-demo)
+- [Future Extensions](#possible-future-extensions)
+- [Set Up](#set-up)
+- [Project Spec](#project-spec)
+- [Project Repo](#project-repo)
+- [Additional Resources](#additional-resources)
 
-## Available Scripts
+## Contributors
+[Igor Decess](https://github.com/userigorgithub)
 
-In the project directory, you can run:
 
-### `npm start`
+## Introduction
+The world is full of never ending stream of news. But where to read all this information? Look no further. nyt-project is an application which helps to stay updated on all latest news. Download today!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+nyt-project was a limited time solo project by [Turing School of Software and Design](https://turing.edu/) that gave an opportunity to polish time management skills (8 hours project) and strengthen existing knowledge of React and Router.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
+- React (with hooks)
+- Router
+- CSS
+- HTML
 
-### `npm test`
+## Learning Goals
+- Learning how to create an application within very limited time
+- Learning new technology: React hooks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Upon page load, the user will be able to see main page with all latest articles
+- User can search articles by using search feature which will search articles by title
+- When user clicks Read More button of the article, new page will be displayed with more information about that article
+- Clicking Back from article details page will take user to the main page
 
-### `npm run build`
+## Project Demo
+1. Main page
+<img width="911" alt="Screen Shot 2022-07-27 at 10 20 35 PM" src="https://user-images.githubusercontent.com/87003746/181420064-d76cf2d2-afad-4c8e-8f3c-cfc88c380664.png">
+2. Search functionality
+<img width="927" alt="Screen Shot 2022-07-27 at 10 21 14 PM" src="https://user-images.githubusercontent.com/87003746/181420175-b3f8f3de-da8a-4215-9b2e-5f7f3c458ff1.png">
+3. Article details page
+<img width="928" alt="Screen Shot 2022-07-27 at 10 21 47 PM" src="https://user-images.githubusercontent.com/87003746/181420234-7d99bde5-4f30-4d7a-872f-8ecbed081515.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Possible Future Extensions
+- Favoriting the best articles
+- Sorting articles (by section, dates, etc)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Front End Set Up Instructions
+1. Fork and clone [this](https://github.com/userigorgithub/nyt-project) repo
+2. Type `cd nyt-project` to move into the root directory
+3. Run `npm install` to install necessary dependencies
+4. Run `npm start`
+5. Copy local url given by running `npm start` and paste it to your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Spec
+- The spec for this project (choose FE Take-Home) can be found [here](https://mod4.turing.edu/projects/take_home/)
 
-### `npm run eject`
+## Project Repo
+- The project repo can be found [here](https://github.com/userigorgithub/nyt-project)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Additional Resources
+- API was provided by [NYTimes](https://developer.nytimes.com/docs/top-stories-product/1/overview)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## [Back to Top](#nyt-project)
