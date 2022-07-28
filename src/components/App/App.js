@@ -8,7 +8,6 @@ import Footer from '../Footer/Footer';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 
 
-
 const App = () => {
   const [articles, setArticles] = useState([])
   const [articleDetails, setArticleDetails] = useState(null)
@@ -24,22 +23,16 @@ const App = () => {
     })
   }, [])
 
-
-  // const showArticleDetails = (id) => {
-  //   const article = articles.find(article.title === id)
-  //   setArticleDetails(article)
-  //   navigate(`/article/${id}`)
-  // }
-
   return (
     <main className="App">
       <Header/>
       <Routes>
         <Route path='/'
           element={<Articles
-          articles={articles} setArticleDetails={setArticleDetails}/>}
+          articles={articles}
+          setArticleDetails={setArticleDetails}/>}
         />
-        <Route path='/article/:id'
+        <Route exact path='/article/:id'
           element={<ArticleDetails
           articles={articles}
           articleDetails={articleDetails}/>}

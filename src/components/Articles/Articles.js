@@ -17,7 +17,6 @@ const Articles = ({ articles, setArticleDetails }) => {
         byline={article.byline}
         abstract={article.abstract}
         setArticleDetails={setArticleDetails}
-
       />
     )
   })
