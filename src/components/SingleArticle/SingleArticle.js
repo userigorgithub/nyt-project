@@ -2,7 +2,11 @@ import './SingleArticle.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SingleArticle = ({ id, title, image, byline, abstract }) => {
+const SingleArticle = ({ id, title, image, byline, abstract, setArticleDetails }) => {
+
+  const handleClick = () => {
+    setArticleDetails(id-1)
+  }
 
   return (
     <div className='SingleArticle'>
@@ -10,7 +14,8 @@ const SingleArticle = ({ id, title, image, byline, abstract }) => {
       <img src={image} alt={title} />
       <h3>{byline}</h3>
       <p>{abstract}</p>
-      <Link to={`/${title}`}><button>Read More</button></Link>
+
+      <Link to={`/article/${id}`}><button onClick={() => handleClick()}>Read More</button></Link>
     </div>
   )
 }

@@ -5,11 +5,12 @@ import { getData } from '../../apiCalls';
 import Header from '../Header/Header';
 import Articles from '../Articles/Articles';
 import Footer from '../Footer/Footer';
-
+import ArticleDetails from '../ArticleDetails/ArticleDetails';
 
 
 const App = () => {
   const [articles, setArticles] = useState([])
+  const [articleDetails, setArticleDetails] = useState(null)
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -27,9 +28,15 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='/'
-          element={<Articles articles={articles}/>}
+          element={<Articles
+          articles={articles}
+          setArticleDetails={setArticleDetails}/>}
         />
-
+        <Route exact path='/article/:id'
+          element={<ArticleDetails
+          articles={articles}
+          articleDetails={articleDetails}/>}
+        />
       </Routes>
       <Footer/>
     </main>
