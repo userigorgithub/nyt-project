@@ -1,12 +1,13 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { getData } from '../../apiCalls';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Articles from '../Articles/Articles';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import SearchArticle from '../SearchArticle/SearchArticle';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 
 const App = () => {
   const [articles, setArticles] = useState([])
@@ -39,14 +40,18 @@ const App = () => {
           element={<Articles
           articles={articles}
           setArticleDetails={setArticleDetails}
-          articles={searchAllArticles}
-          />}
+          articles={searchAllArticles} />}
         />
         <Route exact path='/article/:id'
           element={<ArticleDetails
           articles={articles}
-          articleDetails={articleDetails}
-          />}
+          articleDetails={articleDetails} />}
+        />
+        <Route path='/error'
+          element={<ErrorMessage />}
+        />
+        <Route path="*"
+          element={<Navigate to="/error" replace />}
         />
       </Routes>
       <Footer/>
