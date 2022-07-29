@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getData } from '../../apiCalls';
 import Header from '../Header/Header';
-import Articles from '../Articles/Articles';
 import Footer from '../Footer/Footer';
+import Articles from '../Articles/Articles';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import SearchArticle from '../SearchArticle/SearchArticle';
 
@@ -24,7 +24,10 @@ const App = () => {
     })
   }, [])
 
-  const filterArticles = articles.filter(article => article.title.toLowerCase().includes(searchArticle.toLowerCase()))
+  const searchAllArticles = articles.filter(article => {
+    return (
+      article.title.toLowerCase().includes(searchArticle.toLowerCase()))
+  })
 
   return (
     <main className="App">
@@ -36,7 +39,7 @@ const App = () => {
           element={<Articles
           articles={articles}
           setArticleDetails={setArticleDetails}
-          articles={filterArticles}
+          articles={searchAllArticles}
           />}
         />
         <Route exact path='/article/:id'

@@ -1,8 +1,8 @@
 import './SearchArticle.css';
-import React, { useState} from 'react';
+import React from 'react';
 
 const SearchArticle = ({ searchArticle, setSearchArticle }) => {
-  
+
   const handleSearch = (event) => {
     setSearchArticle(event.target.value)
   }
