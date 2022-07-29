@@ -1,0 +1,7 @@
+.Articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
