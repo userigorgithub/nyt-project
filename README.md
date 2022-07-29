@@ -23,6 +23,7 @@ The world is full of never ending stream of news. But where to read all this inf
 nyt-project was a limited time solo project by [Turing School of Software and Design](https://turing.edu/) that gave an opportunity to polish time management skills (8 hours project) and strengthen existing knowledge of React and Router.
 
 ## Technologies
+- JavaScript
 - React (with hooks)
 - Router
 - CSS
@@ -52,7 +53,8 @@ nyt-project was a limited time solo project by [Turing School of Software and De
 - Favoriting the best articles
 - Sorting articles (by section, dates, etc)
 - Better page design (scss)
-- Responsive design
+- Fully responsive design using media queries
+- Cypress testing
 
 ## Front End Set Up Instructions
 1. Fork and clone [this](https://github.com/userigorgithub/nyt-project) repo
