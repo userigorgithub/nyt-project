@@ -4,14 +4,13 @@ import SingleArticle from '../SingleArticle/SingleArticle';
 
 const Articles = ({ articles, setArticleDetails }) => {
 
-  let counter = 0
+  let id = 0
   const allArticles = articles.map(article => {
-    counter += 1
-    article.id = counter
+    id += 1
     return (
       <SingleArticle
-        id={counter}
-        key={counter}
+        id={id}
+        key={id}
         title={article.title}
         image={article.multimedia ? article.multimedia[2].url : null}
         byline={article.byline}

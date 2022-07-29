@@ -29,10 +29,12 @@ nyt-project was a limited time solo project by [Turing School of Software and De
 - HTML
 
 ## Learning Goals
+- Practicing Take-Home challenge for interview
 - Learning how to create an application within very limited time
 - Learning new technology: React hooks
 
 ## Features
+- Accessibility of 100% for the main page
 - Upon page load, the user will be able to see main page with all latest articles
 - User can search articles by using search feature which will search articles by title
 - When user clicks Read More button of the article, new page will be displayed with more information about that article
@@ -49,6 +51,8 @@ nyt-project was a limited time solo project by [Turing School of Software and De
 ## Possible Future Extensions
 - Favoriting the best articles
 - Sorting articles (by section, dates, etc)
+- Better page design (scss)
+- Responsive design
 
 ## Front End Set Up Instructions
 1. Fork and clone [this](https://github.com/userigorgithub/nyt-project) repo
